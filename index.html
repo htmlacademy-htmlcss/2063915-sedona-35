@@ -9,13 +9,13 @@
 <nav class="navigation">
   <ul class="navigation-list">
     <li class="navigation-item">
-      <img class="logo" src=" https://htmlacademy.ru/" alt="Логотип Седона">
+      <a class="navigation-link navigation-link-current" href="https://htmlacademy.ru/"><img src="#" alt="Логотип Седона"></a>
     </li>
      <li class="navigation-item">
       <a class="navigation-link" href="main.html">Главная</a>
     </li>
      <li class="navigation-item">
-      <a class="navigation-link" href="about.html">О седоне</a>
+      <a class="navigation-link" href="about.html">О Седоне</a>
     </li>
      <li class="navigation-item">
       <a class="navigation-link" href="hostel.html">Гостиницы</a>
@@ -32,16 +32,106 @@
     </li>
     <li class="navigation-item">
       <a class="navigation-link" href="#">
-        <span class="visually-hidden">Хочу сюда</span></a>
+        <span class="visually-hidden">ХОЧУ СЮДА</span></a>
     </li>
       </ul>
 </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Седона</h1>
-      <img class="logo" src="" alt="Логотип города Седона">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="big-view-logo" src="#" alt="Логотип города Седона">
+        <h2 class="main-index-slogan">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+            <p class="main-index-why">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <section class="reasons">
+                <ul class="reasons-list">
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                        <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    </li>
+                    <li class="reasons-item">
+                        <img class="view-cafe" src="#" alt="Вид на местные кафе">
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                        <p class="reasons-description">Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">КРАСИВАЯ ДОРОГА</h3>
+                        <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">МАЛО ТУРИСТОВ</h3>
+                        <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
+                    </li>
+                    <li class="reasons-item">
+                        <img class="view-canyon" src="#" alt="Вид на местный Гранд-Каньон">
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">ТАМ ЕСТЬ МОС ДЬЯВОЛА</h3>
+                        <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">ЖИЛЬЁ</h3>
+                        <p class="reasons-description">Рекомендуем пожить в настоящем мотеле,  всё как в кино!</p>
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">ЕДА</h3>
+                        <p class="reasons-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                    </li>
+                    <li class="reasons-item">
+                        <h3 class="reasons-title">СУВЕНИРЫ</h3>
+                        <p class="reasons-description">Не только китайского,  но и настоящего местного производства!</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="search">
+                <h2 class="time-to-search">ЗИНТЕРЕСОВАЛИСЬ?</h2>
+                <p class="time-and-place">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <a class="buttom-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+            </section>
+            <section class="subscription">
+                <h2 class="lets-subscription">ПОДПИШИТЕСЬ НА РАССЫКУ</h2>
+                <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="subscription-email">Email</label>
+                    <input class="field" placehfolder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
+                    <button class="button subscription-button" type="submit">
+                        <span class="button subscription-send">ПОДПИСАТЬСЯ</span>
+                    </button>
+                </form>
+            </section>
+      </main>
+      <footer class="contats">
+        <section  class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="buttin" href="https://vk.com/htmlacademy">
+                        <span class="visually-hidden">Vkontakte</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="buttin" href="https://t.me/htmlacademy">
+                        <span class="visually-hidden">Telegram</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="buttin" href="https://www.youtube.com/user/htmlacademyru">
+                        <span class="visually-hidden">Youtube</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section  class="footer-social">
+            <h2 class="visually-hidden">Номер телефона</h2>
+            <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </section>
+        <section  class="footer-social">
+            <h2 class="visually-hidden">Логотип .html academy</h2>
+            <a class="logotip" href=" https://htmlacademy.ru/"><img src="#"  alt="Логотип .html academy"></a>
+        </section>
 
-    </main>
+      </footer>
 
   </body>
 </html>
