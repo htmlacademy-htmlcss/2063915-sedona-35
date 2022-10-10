@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -34,7 +35,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Хочу сюда</span></a>
+              <span class="navigation-link-buttom">Хочу сюда</span></a>
           </li>
         </ul>
       </nav>
@@ -42,6 +43,7 @@
 
     <main class="main-inner">
       <header class="inner-header">
+        <div class="selection-panel">
         <img src="images/catalog/galery-filter.jpg" width="1200" height="412" alt="Вид на каньон">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -99,9 +101,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type=reset type="submit">Сбросить</button>
+            <button class="button-yes" type="submit">Применить</button>
+            <button class="button-no" type=reset type="submit">Сбросить</button>
           </form>
+        </div>
 
           <h2 class="hotels-found">Найдено гостиниц: 38</h2>
 
@@ -110,15 +113,15 @@
             <option value="cheap">Сначала дешевое</option>
             <option value="expencive">Сначала дорге</option>
           </select>
-          <a href="#" class="button">
+          <a href="#" class="button-see">
             <img src="images/catalog/cards.png" width="48" height="48" alt="Показать карточки">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a href="#" class="button">
+          <a href="#" class="button-see">
             <img src="images/catalog/sliders.png" width="48" height="48" alt="Показать слайдеры">
             <span class="visually-hidden">Показать слайдеры</span>
           </a>
-          <a href="#" class="button">
+          <a href="#" class="button-see">
             <img src="images/catalog/list.png" width="48" height="48" alt="Показать список">
             <span class="visually-hidden">Показать список</span>
           </a>
@@ -127,8 +130,8 @@
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <img class="product-clard-image" src="images/catalog/catalog-1.png" width="300" height="212" alt="Вид на звёзды">
-                <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
+              <h3 class="product-card-title">Amara Resort & Spa</h3>
               <b class="product-card-type">Гостиница</b>
               <b class="product-card-price">От 4000 Р</b>
               <a class="product-card-buttom buttom" href="#">Подробнее</a>
@@ -139,8 +142,9 @@
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <img class="product-clard-image" src="images/catalog/catalog-2.png" width="300" height="212" alt="Вид на радугу">
-                <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
+
               <b class="product-card-type">Гостиница</b>
               <b class="product-card-price">От 5000 Р</b>
               <a class="product-card-buttom buttom" href="#">Подробнее</a>
@@ -151,8 +155,9 @@
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <img class="product-clard-image" src="images/catalog/catalog-3.png" width="300" height="212" alt="Вид на Каньон">
-                <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
+                <h3 class="product-card-title">Desert Quail Inn</h3>
+
               <b class="product-card-type">Гостиница</b>
               <b class="product-card-price">От 2500 Р</b>
               <a class="product-card-buttom buttom" href="#">Подробнее</a>
@@ -163,8 +168,9 @@
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <img class="product-clard-image" src="images/catalog/catalog-4.png" width="300" height="212" alt="Вид на звёзды и Каньон">
-                <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
+                <h3 class="product-card-title">GreenTree Inn</h3>
+
               <b class="product-card-type">Гостиница</b>
               <b class="product-card-price">От 1500 Р</b>
               <a class="product-card-buttom buttom" href="#">Подробнее</a>
@@ -188,7 +194,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link next" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -199,7 +205,7 @@
         </section>
       </header>
 
-      <section class="subscription">
+      <section class="subscription-2">
         <h2 class="lets-subscription">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
