@@ -34,8 +34,8 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #FFFFFF;;
 }
 
 
@@ -46,7 +46,7 @@ body {
     text-transform: capitalize;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #000000;
 }
 
 .navigation-link-buttom {
@@ -66,7 +66,7 @@ body {
 }
 
 .main-discription {
-    background-color: white;
+    background-color: #FFFFFF;white;
 }
 
 .main-index-slogan {
@@ -94,13 +94,13 @@ body {
 }
 
 .search {
-    background-color: white;
+    background-color: #FFFFFF;white;
 }
 
 .subscription,
 .subscription-2 {
     background-color: #82B3D3;
-    color: white;
+    color: #FFFFFF;;
     text-align: center;
 }
 
@@ -108,22 +108,22 @@ body {
     background-image: url("../images/main/main-subscribe.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #FFFFFF;;
 }
 .subscription-2{
-    background-color: white;
-    color: black;
+    background-color: #FFFFFF;;
+    color: #000000;
 
 }
-.subscription-2 > .subscription-description{
+.subscription-2 .subscription-description{
     color: #333333;
 }
 
-.reasons li:nth-child(2n) {
+.reasons-item:nth-child(2n) {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reasons li:nth-child(3) {
+.reasons-item-blue-blue {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -141,15 +141,11 @@ body {
     color: #333333;
 }
 
-.reasons li:nth-child(5) {
+.reasons-item-blue {
     background-color: #82B3D3;
-    color: white;
+    color: #FFFFFF;;
 }
 
-.reasons li:first-child {
-    background-color: #82B3D3;
-    color: white;
-}
 
 .search {
     text-align: center;
@@ -167,7 +163,7 @@ body {
     font-size: 20px;
     line-height: 36px;
     background-color: #756157;
-    color: white;
+    color: #FFFFFF;;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -207,7 +203,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    color: #FFFFFF;;
 }
 
 .footer-phone {
@@ -215,12 +211,12 @@ body {
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 
 .selection-panel {
-    color: white;
+    color: #FFFFFF;;
     background-image: url(".../images/catalog/galery-filter.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -249,7 +245,7 @@ body {
 .button-no {
     font-size: 16px;
     line-height: 20px;
-    color: white;
+    color: #FFFFFF;;
     font-weight: 700;
     text-transform: uppercase;
     background: #82B3D3;
@@ -270,14 +266,14 @@ body {
 .select-control {
     font-weight: 400;
     color: #333333;
-    ;
+
 }
 
 .product-card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -288,20 +284,20 @@ body {
     text-align: right;
 }
 
-.product-card-buttom,
-button {
+.product-card-buttom-buttom,
+.button-like {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     background-color: #756157;
-    color: white;
+    color: #FFFFFF;;
     text-decoration: none;
     border-style: none;
 
 }
 
-.button {
+.button-like {
     background-color: #82B3D3;
 }
 
@@ -322,17 +318,18 @@ button {
     line-height: 36px;
     text-transform: uppercase;
     background: #82B3D3;
-    color: white;
+    color: #FFFFFF;;
     text-decoration: none;
     border-style: none;
+
 }
 
 .pagination-current{
-    color: black;
+    color: #000000;
     background-color: #F2F2F2;;
 }
 
 .next{
-    background: white;
-    color: black;
+    background: #FFFFFF;;
+    color: #000000;
 }
