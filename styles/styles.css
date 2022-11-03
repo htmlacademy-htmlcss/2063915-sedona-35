@@ -352,7 +352,7 @@ body {
 .subscription-button {
     background-color: #82B3D3;
     border-style: none;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
 }
 
 .subscription-send {
@@ -541,7 +541,6 @@ body {
 
 .product-card{
     display: grid;
-    justify-content: center;
     grid-template-rows: 212px min-content 21px 36px 37px;
     grid-template-columns: 20px 140px 140px 20px;
     gap: 16px 20px;
