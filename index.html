@@ -10,31 +10,34 @@
   <body>
     <header class="page header">
       <nav class="navigation">
-        <a class="navigation-link navigation-link-current" href="https://htmlacademy.ru/"><img
-            src="images/main/logo.svg" width="140" height="70" alt="Логотип Седона"></a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="main.html">Главная</a>
+        <a class="navigation-link navigation-link-current" href="index.html"><img
+            src="images/main/logo.svg" width="140" height="70" alt="Логотип Седона."></a>
+        <ul class="navigation-list first-list">
+          <li class="navigation-item navigation-item-main">
+            <a class="navigation-link about" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link about" href="about.html">О Седоне</a>
           </li>
-          <li class="navigation-item-hostels">
-            <a class="navigation-link" href="hostel.html">Гостиницы</a>
+          <li class="navigation-item">
+            <a class="navigation-link about" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item search-hos">
             <a class="navigation-link" href="#">
-              <img src="images/main/search.png" width="20" height="20" alt="Значок поиска">
+              <img src="images/main/search.svg" width="20" height="20" alt="Значок поиска.">
               <span class="visually-hidden">Поиск</span></a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item favourites">
+            <span class="like">
+              <img src="images/main/number.svg" width="20" height="20" alt="Значок счётчика.">
+            </span>
             <a class="navigation-link" href="#">
-              <img src="images/main/favourites.png" width="28" height="31" alt="Значок сердце">
+              <img src="images/main/favourites.svg" width="20" height="20" alt="Значок сердце.">
               <span class="visually-hidden">Избранное</span></a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item link-buttom">
             <a class="navigation-link" href="#">
               <span class="navigation-link-buttom">Хочу сюда!</span></a>
           </li>
@@ -44,9 +47,8 @@
     <main class="main-index main-conteiner">
       <div class="main-logotip">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="big-view-logo-2" src="images/main/welcome.svg" width="458" height="352" alt="Welcome to the Sedona">
-        <img class="big-view-logo-11" src="images/main/basement-pictures.svg" width="1200" height="57"
-          alt="Декор к фотографии">
+        <img class="big-view-logo-2" src="images/main/welcome.svg" width="458" height="352"
+          alt="Welcome to the Sedona.">
       </div>
       <div class="main-discription">
         <h2 class="main-index-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -56,80 +58,84 @@
         <ul class="reasons-list">
           <li class="reasons-item reasons-item-blue">
             <div class="reasons-description-item">
-            <h3 class="reasons-title">Настоящий городок</h3>
-            <p class="reasons-description-not">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-            <img class="view-cafe" src="images/main/photo-1.jpg" width="800" height="384" alt="Вид на местные кафе">
+              <h3 class="reasons-title reasons-title-1">Настоящий городок</h3>
+              <img src="images/main/the-wand-is-white.svg" width="60" height="2" alt="Палочка белая." class="the-wand">
+              <p class="reasons-description-not">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
+            </div>
+            <img class="view-cafe" src="images/main/photo-1.jpg" width="800" height="384" alt="Вид на местные кафе.">
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-            <h3 class="reasons-title">Небольшая площадь</h3>
-            <p class="reasons-description">Все достопримечательности находятся очень близко</p>
-          </div>
+              <h3 class="reasons-title reasons-title-3">Небольшая площадь</h3>
+              <img src="images/main/the-wand-is-dark.svg" width="60" height="2" alt="Палочка темная.">
+              <p class="reasons-description">Все достопримечательности<br> находятся очень близко</p>
+            </div>
           </li>
           <li class="reasons-item reasons-item-blue-blue">
             <div class="reasons-description-item">
-            <h3 class="reasons-title">Красивая дорога</h3>
-            <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
+              <h3 class="reasons-title reasons-title-3">Красивая дорога</h3>
+              <img src="images/main/the-wand-is-dark.svg" width="60" height="2" alt="Палочка темная.">
+              <p class="reasons-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            </div>
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-            <h3 class="reasons-title">Мало туристов</h3>
-            <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
+              <h3 class="reasons-title reasons-title-3">Мало туристов</h3>
+              <img src="images/main/the-wand-is-dark.svg" width="60" height="2" alt="Палочка темная.">
+              <p class="reasons-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+            </div>
           </li>
           <li class="reasons-item reasons-item-blue">
             <img class="view-canyon" src="images/main/photo-2.jpg" width="800" height="384"
-              alt="Вид на местный Гранд-Каньон">
-              <div class="reasons-description-item">
-            <h3 class="reasons-title">Там есть мост дьявола</h3>
-            <p class="reasons-description-not">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </div>
+              alt="Вид на местный Гранд-Каньон.">
+            <div class="reasons-description-item">
+              <h3 class="reasons-title reasons-title-1">Там есть мост дьявола</h3>
+              <img src="images/main/the-wand-is-white.svg" width="60" height="2" alt="Палочка белая.">
+              <p class="reasons-description-not">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
+            </div>
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-            <img src="images/main/housing.svg" width="75" height="72" alt="Иконка домика">
-            <h3 class="reasons-title">Жильё</h3>
-            <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </div>
+              <img src="images/main/housing.svg" width="75" height="72" alt="Иконка домика." class="reasons-item-img">
+              <h3 class="reasons-title reasons-title-2">Жильё</h3>
+              <p class="reasons-description reasons-description-2">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+            </div>
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-            <img src="images/main/food.svg" width="74" height="70" alt="Иконка бургера">
-            <h3 class="reasons-title">Еда</h3>
-            <p class="reasons-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </div>
+              <img src="images/main/food.svg" width="74" height="70" alt="Иконка бургера." class="reasons-item-img">
+              <h3 class="reasons-title reasons-title-2">Еда</h3>
+              <p class="reasons-description reasons-description-2">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+            </div>
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-            <img src="images/main/souvenirs.svg" width="64" height="76" alt="Иконка подарка">
-            <h3 class="reasons-title">Сувениры</h3>
-            <p class="reasons-description">Не только китайского, но и настоящего местного производства!</p>
-          </div>
+              <img src="images/main/souvenirs.svg" width="64" height="76" alt="Иконка подарка." class="reasons-item-img">
+              <h3 class="reasons-title reasons-title-2">Сувениры</h3>
+              <p class="reasons-description reasons-description-2">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+            </div>
           </li>
         </ul>
       </section>
       <section class="search">
         <h2 class="time-to-search">Заинтересовались?</h2>
-        <p class="time-and-place">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        <p class="time-and-place">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <a class="buttom-search" href="#">Поиск гостиниц в Седоне</a>
       </section>
       <section class="subscription">
-        <img src="images/main/main-subscribe.jpg" width="1200" height="416,86" alt="Вид на каньон">
-
-
-        <h2 class="lets-subscription">Подпишитесь на рассылку</h2>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscription-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="subscription-email"
-            id="subscription-email" required>
-          <button class="button subscription-button" type="submit">
-            <span class="button subscription-send">Подписаться</span>
-          </button>
-        </form>
+        <div class="subscription-text">
+          <h2 class="lets-subscription">Подпишитесь на рассылку</h2>
+          <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="subscription-email">Email</label>
+            <input class="field" placeholder="email@example.com" type="email" name="subscription-email"
+              id="subscription-email" required>
+            <button class="button subscription-button" type="submit">
+              <span class="button subscription-send">Подписаться</span>
+            </button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="contats">
@@ -139,19 +145,19 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="buttin" href="https://vk.com/htmlacademy">
-                <img src="images/main/vk.png" width="24" height="14" alt="Значок Vkontakte">
+                <img src="images/main/vk.svg" width="24" height="14" alt="Значок Vkontakte.">
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="buttin" href="https://t.me/htmlacademy">
-                <img src="images/main/telegram.png" width="18" height="15,1" alt="Значок Telegram">
+                <img src="images/main/telegram.svg" width="18" height="16" alt="Значок Telegram.">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="buttin" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="images/main/youtube.png" width="22" height="17" alt="Значок Youtube">
+                <img src="images/main/youtube.svg" width="22" height="17" alt="Значок Youtube.">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
@@ -163,8 +169,8 @@
         </section>
         <section class="footer-social last-logo">
           <h2 class="visually-hidden">Логотип .html academy</h2>
-          <a class="logotip" href=" https://htmlacademy.ru/"><img src="images/main/footer-logo-html-academy.png"
-              width="114.9" height="32.9" alt="Логотип .html academy"></a>
+          <a class="logotip" href=" https://htmlacademy.ru/"><img src="images/main/footer-logo-html-academy.svg"
+              width="114.9" height="32.9" alt="Логотип .html academy."></a>
         </section>
       </div>
     </footer>
