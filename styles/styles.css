@@ -1214,14 +1214,19 @@ input[type="number" i] {
     width: 52px;
     height: 52px;
     border: none;
-    background-image: url("../images/main/modal-close.svg");
+    background-image: url("../images/main/cross.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     margin-top: 64px;
     margin-right: 52px;
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
+    border-radius: 50%;
 
+}
+
+.modal-close-button:focus{
+    border: 3px solid #83B3D3;
 }
 
 .modal-title {
@@ -1316,6 +1321,10 @@ input[type="number" i] {
     border: none;
 }
 
+.data-feild:focus{
+    outline:  #83B3D3;
+}
+
 .search-button-min {
     display: flex;
     width: 20px;
@@ -1408,6 +1417,7 @@ input[type="number" i] {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    color: #BF3535;;
 }
 
 .confirm-massage {
