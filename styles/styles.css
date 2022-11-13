@@ -664,6 +664,9 @@ input[type="number" i] {
     z-index: 1;
     width: 17px;
     height: 24px;
+    color: #756157;
+    top: 12px;
+    left: 106px;
 }
 
 .range-input {
@@ -677,11 +680,11 @@ input[type="number" i] {
 }
 
 .range-input:hover {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .range-input:active {
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
 }
 
 .range-input-from {
@@ -690,6 +693,7 @@ input[type="number" i] {
 
 .catalog-filter-label-from {
     margin-right: 2px;
+    position: relative;
 }
 
 .range-input-to {
@@ -733,15 +737,17 @@ input[type="number" i] {
     border: 0;
 }
 
+
+.control-input:focus + .control-mark-checkbox,
+.radio:focus + .control-mark-radio {
+    border: 3px solid #83B3D3;
+}
+
 .control-input:hover + .control-mark-checkbox,
 .radio:hover + .control-mark-radio {
     opacity: 0.5;
 }
 
-.control-input:focus + .control-mark-checkbox,
-.radio:focus + .control-mark-radio {
-    outline: #82B3D3;
-}
 
 .control-input:active + .control-mark-checkbox,
 .radio:active + .control-mark-radio {
@@ -789,6 +795,12 @@ input[type="number" i] {
     border-radius: 4px;
 }
 
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .button-yes {
     margin-bottom: 32px;
 }
@@ -798,7 +810,7 @@ input[type="number" i] {
 }
 
 .button-no:hover {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .button-see {
@@ -1171,10 +1183,10 @@ input[type="number" i] {
     overflow: auto;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
   }
-
+*/
 .appointment-form {
     display: grid;
     grid-template-rows: 48px 48px 48px 60px;
@@ -1309,8 +1321,8 @@ input[type="number" i] {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 15px;
-    left: 140px;
+    top: 13px;
+    left: 130px;
     border: none;
     padding: 0;
     margin: 0;
@@ -1340,8 +1352,8 @@ input[type="number" i] {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 13px;
+    right: 15px;
     border: none;
     color: rgba(117, 97, 87, 0.3);
     padding: 0;
@@ -1375,6 +1387,19 @@ input[type="number" i] {
     margin: 0;
     display: block;
 }
+
+.tooltip-text:after {
+    content:'';
+    background-image: url("../images/main/tooltip-arrow.svg");
+    width: 14px;
+    height: 6px;
+    position:absolute;
+    top: -5px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .error-massage {
     margin-left: 137px;
@@ -1424,18 +1449,6 @@ input[type="number" i] {
     z-index: 1;
 }
 
-.tooltip-text::before {
-    content: "";
-    background-image: url("../images/main/tooltip-before.svg");
-    width: 19px;
-    height: 9px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .tooltip-toogle:hover + .tooltip-text,
 .tooltip-toogle:focus + .tooltip-text {
@@ -1445,18 +1458,23 @@ input[type="number" i] {
 
 .quantity {
     position: relative;
+    background-color: #F2F2F2;
+}
+
+.gest-form{
+    background-color: #FFFFFF;
 }
 
 .adults-amount-input{
     position: absolute;
     margin-left: 168px;
-    margin-top: -35px;
+    margin-top: -36px;
     border-radius: 0;
 }
 
 .children-amount-input{
     position: absolute;
     margin-left: 168px;
-    margin-top: -50px;
+    margin-top: -48px;
     border-radius: 0;
 }
