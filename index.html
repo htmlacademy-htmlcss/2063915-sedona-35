@@ -228,7 +228,7 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-form-wrapper date-wrapper">
               <div class="search-date">
-                <label class="search-form-label date-label" for="arrivat-date">Дата заезда:</label>
+                <label class="search-form-label date-label" for="arrivat-date">Дата Заезда:</label>
                 <input class="data-feild feild arrivat-date-input" type="text" id="arrivat-date" name="arrivat-date"
                   value="27 апреля 2020">
               </div>
@@ -236,15 +236,15 @@
             </div>
             <div class="search-form-wrapper date-wrapper">
               <div class="search-date">
-                <label class="search-form-label date-label date-label-2" for="departure-date">Дата выезда:</label>
+                <label class="search-form-label date-label date-label-2" for="departure-date">Дата Выезда:</label>
                 <input class="data-feild feild departure-date-input" type="text" id="departure-date"
-                  name="departure-date" value="27 апреля 2020">
+                  name="departure-date" value="1 сентября 2021">
               </div>
               <span class="confirm-massage">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="quantity quantity-adults">
               <div class="gest-form">
-                <label class="search-form-label adults" for="adults">Взрослые:</label>
+                <label class="lsearch-form-labe adults" for="adults">Взрослые:</label>
                 <input class="amount-form-feild feild adults-amount-input" type="text" step="1" id="adults"
                   name="adults-amount" value="2">
               </div>
@@ -264,6 +264,8 @@
             <div class="quantity quantity-children">
               <div class="gest-form">
                 <label class="search-form-label children" for="children">Дети:</label>
+                <input class="amount-form-feild feild children-amount-input" type="text" step="1" id="children"
+                  name="children-amount" value="1">
                 <span class="search-form-label form-label-icon">
                   <span class="tooltip">
                     <button class="tooltip-toogle" type="button" id="tooltip-text" role="tooltip" id="tooltip-children">
@@ -277,8 +279,6 @@
                       будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <input class="amount-form-feild feild children-amount-input" type="text" step="1" id="children"
-                  name="children-amount" value="1">
               </div>
 
               <button class="search-button-min" type="button">
@@ -293,6 +293,7 @@
                   </svg>
                 <span class="visually-hidden">Кнока увеличивающая колличество детей.</span>
               </button>
+
             </div>
             <button class="search-form-button" type="submit">Найти</button>
           </form>
