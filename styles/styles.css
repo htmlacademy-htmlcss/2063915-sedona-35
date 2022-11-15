@@ -1060,7 +1060,7 @@ input[type="number" i] {
 }
 
 .product-card-raiting {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
