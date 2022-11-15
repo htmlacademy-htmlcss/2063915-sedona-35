@@ -60,7 +60,7 @@
         <ul class="reasons-list">
           <li class="reasons-item reasons-item-blue">
             <div class="reasons-description-item">
-              <h3 class="reasons-title reasons-title-1">Настоящий городок</h3>
+              <h3 class="reasons-title reasons-title-1 reasons-title-main">Настоящий<br> городок</h3>
               <img src="images/main/the-wand-is-white.svg" width="60" height="2" alt="Палочка белая." class="the-wand">
               <p class="reasons-description-not">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
             </div>
@@ -68,21 +68,21 @@
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-              <h3 class="reasons-title reasons-title-3">Небольшая площадь</h3>
+              <h3 class="reasons-title reasons-title-3 reasons-title-main">Небольшая<br> площадь</h3>
               <img src="images/main/the-wand-is-dark.svg" width="60" height="2" alt="Палочка темная.">
               <p class="reasons-description">Все достопримечательности<br> находятся очень близко</p>
             </div>
           </li>
           <li class="reasons-item reasons-item-blue-blue">
             <div class="reasons-description-item">
-              <h3 class="reasons-title reasons-title-3">Красивая дорога</h3>
+              <h3 class="reasons-title reasons-title-3 reasons-title-main">Красивая<br> дорога</h3>
               <img src="images/main/the-wand-is-dark.svg" width="60" height="2" alt="Палочка темная.">
               <p class="reasons-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </div>
           </li>
           <li class="reasons-item">
             <div class="reasons-description-item">
-              <h3 class="reasons-title reasons-title-3">Мало туристов</h3>
+              <h3 class="reasons-title reasons-title-3 reasons-title-main">Мало<br> туристов</h3>
               <img src="images/main/the-wand-is-dark.svg" width="60" height="2" alt="Палочка темная.">
               <p class="reasons-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
             </div>
@@ -91,8 +91,8 @@
             <img class="view-canyon" src="images/main/photo-2.jpg" width="800" height="384"
               alt="Вид на местный Гранд-Каньон.">
             <div class="reasons-description-item">
-              <h3 class="reasons-title reasons-title-1">Там есть мост дьявола</h3>
-              <img src="images/main/the-wand-is-white.svg" width="60" height="2" alt="Палочка белая.">
+              <h3 class="reasons-title reasons-title-1 reasons-title-main">Там есть<br> мост дьявола</h3>
+              <img src="images/main/the-wand-is-white.svg"  width="60" height="2" alt="Палочка белая.">
               <p class="reasons-description-not">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
             </div>
           </li>
@@ -136,7 +136,7 @@
           <p class="subscription-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscription-email" class="visually-hidden">Email</label>
-            <input class="field" placeholder="email@example.com" type="email" name="subscription-email"
+            <input class="field subscription-email-w" placeholder="email@example.com" type="email" name="subscription-email"
               id="subscription-email" required>
             <button class="button subscription-button blu-button" type="submit">
               <span class="button subscription-send">Подписаться</span>
@@ -229,7 +229,7 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-form-wrapper date-wrapper">
               <div class="search-date">
-                <label class="search-form-label date-label" for="arrivat-date">Дата заезда:</label>
+                <label class="search-form-label date-label" for="arrivat-date">Дата Заезда:</label>
                 <input class="data-feild feild arrivat-date-input" type="text" id="arrivat-date" name="arrivat-date"
                   value="27 апреля 2020">
               </div>
@@ -237,15 +237,15 @@
             </div>
             <div class="search-form-wrapper date-wrapper">
               <div class="search-date">
-                <label class="search-form-label date-label date-label-2" for="departure-date">Дата выезда:</label>
+                <label class="search-form-label date-label date-label-2" for="departure-date">Дата Выезда:</label>
                 <input class="data-feild feild departure-date-input" type="text" id="departure-date"
-                  name="departure-date" value="27 апреля 2020">
+                  name="departure-date" value="1 сентября 2021">
               </div>
               <span class="confirm-massage">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="quantity quantity-adults">
               <div class="gest-form">
-                <label class="search-form-label adults" for="adults">Взрослые:</label>
+                <label class="lsearch-form-labe adults" for="adults">Взрослые:</label>
                 <input class="amount-form-feild feild adults-amount-input" type="text" step="1" id="adults"
                   name="adults-amount" value="2">
               </div>
@@ -265,6 +265,8 @@
             <div class="quantity quantity-children">
               <div class="gest-form">
                 <label class="search-form-label children" for="children">Дети:</label>
+                <input class="amount-form-feild feild children-amount-input" type="text" step="1" id="children"
+                  name="children-amount" value="1">
                 <span class="search-form-label form-label-icon">
                   <span class="tooltip">
                     <button class="tooltip-toogle" type="button" id="tooltip-text" role="tooltip" id="tooltip-children">
@@ -278,8 +280,6 @@
                       будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
-                <input class="amount-form-feild feild children-amount-input" type="text" step="1" id="children"
-                  name="children-amount" value="1">
               </div>
 
               <button class="search-button-min" type="button">
@@ -294,6 +294,7 @@
                   </svg>
                 <span class="visually-hidden">Кнока увеличивающая колличество детей.</span>
               </button>
+
             </div>
             <button class="search-form-button" type="submit">Найти</button>
           </form>
