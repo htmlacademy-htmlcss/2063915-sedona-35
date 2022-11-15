@@ -262,11 +262,11 @@ body {
     margin-top: 0;
 }
 
-.reasons-title-2{
+.reasons-title-2 {
     margin-top: 30px;
 }
 
-.reasons-description-not{
+.reasons-description-not {
     margin-bottom: 0;
     margin-top: 30px;
 }
@@ -294,12 +294,14 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     padding-bottom: 104px;
+    margin-top: 27px;
 
 }
 
 .subscription-2 .subscription-description {
     color: #333333;
 }
+
 
 .subscription-text {
     padding-top: 96px;
@@ -309,9 +311,11 @@ body {
 
 }
 
-.subscription-description{
+.subscription-description {
     margin-bottom: 54px;
 }
+
+
 
 .reasons-item:nth-child(2n) {
     background-color: rgba(131, 179, 211, 0.12);
@@ -321,7 +325,7 @@ body {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.lets-subscription{
+.lets-subscription {
     margin-top: 0;
 }
 
@@ -335,7 +339,7 @@ body {
     list-style-type: none;
 }
 
-.reasons-item-img{
+.reasons-item-img {
     margin-top: 21px;
 }
 
@@ -369,7 +373,7 @@ body {
     height: 384px;
 }
 
-.reasons-title-main{
+.reasons-title-main {
     margin-top: -10px;
 }
 
@@ -498,7 +502,6 @@ body {
 .catalog-filter {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 160px;
     width: 1060px;
     margin-bottom: 70px;
@@ -636,7 +639,7 @@ body {
     position: relative;
     height: 4px;
     background-color: #756157;
-    margin-top: 48px;
+    margin-top: 45px;
     width: 288px;
 }
 
@@ -663,7 +666,7 @@ body {
 
 .toggle-max {
     top: -8px;
-    right: -10px;
+    right: -5px;
 }
 
 .range-toggle:focus {
@@ -694,6 +697,18 @@ input[type="number" i] {
 .catalog-filter-label {
     display: flex;
     position: relative;
+}
+
+.catalog-filter-group-cost {
+    margin-left: 149.15px;
+}
+
+.catalog-filter-group-type {
+    margin-left: 70px;
+}
+
+.catalog-filter-button {
+    margin-left: 70px;
 }
 
 .range {
@@ -753,7 +768,6 @@ input[type="number" i] {
 
 .control-mark-checkbox {
     position: absolute;
-    top: 2;
     left: 0;
     width: 20px;
     height: 20px;
@@ -763,7 +777,6 @@ input[type="number" i] {
 
 .control-mark-radio {
     position: absolute;
-    top: 2;
     left: 0;
     width: 20px;
     height: 20px;
@@ -850,7 +863,7 @@ input[type="number" i] {
     margin-bottom: 32px;
 }
 
-.button-yes:focus{
+.button-yes:focus {
     outline: none;
 }
 
@@ -887,11 +900,11 @@ input[type="number" i] {
 
 
 .button-see:hover {
-    outline: none;
+    outline: #68A2CA;
 }
 
 .button-see:focus {
-    outline: none;
+    outline: #000000;
 }
 
 
@@ -901,9 +914,15 @@ input[type="number" i] {
 }
 
 .icos-view:focus {
-    border: 2px solid #000000;
+    border: 2px solid #68A2CA;
     outline: none;
 }
+
+.icos-view:active {
+    border: 2px solid #68A2CA;
+    outline: none;
+}
+
 
 .brown-buttom:hover {
     outline: none;
@@ -1099,14 +1118,14 @@ input[type="number" i] {
 
 .border-catalog {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .pagination {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 69px;
 }
 
 .pagination-link {
@@ -1292,10 +1311,10 @@ input[type="number" i] {
     overflow: auto;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
 }
-
+*/
 .appointment-form {
     display: grid;
     grid-template-rows: 48px 48px 48px 60px;
@@ -1308,6 +1327,7 @@ input[type="number" i] {
 .modal {
     position: relative;
     margin: auto;
+    margin-top: 400px;
     padding: 64px 70px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -1460,12 +1480,16 @@ input[type="number" i] {
     position: absolute;
     color: rgba(117, 97, 87, 0.3);
     background: #F2F2F2;
-    top: 14px;
-    left: 150px;
+    top: 13px;
+    left: 148px;
     border: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.search-button-min-2 {
+    left: 140px;
 }
 
 .search-button-min:hover,
@@ -1492,7 +1516,7 @@ input[type="number" i] {
     height: 20px;
     position: absolute;
     top: 14px;
-    right: 15px;
+    right: 10px;
     border: none;
     color: rgba(117, 97, 87, 0.3);
     padding: 0;
@@ -1702,4 +1726,24 @@ input[type="number" i] {
     padding: 8px 50px;
     display: inline-block;
     text-align: center;
+}
+
+.lets-subscription-2 {
+    margin-bottom: 20px;
+}
+
+.subscription-description-2 {
+    margin-top: 17px;
+}
+
+.subscription-2 {
+    padding-bottom: 110px;
+}
+
+.data-feild {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 }
