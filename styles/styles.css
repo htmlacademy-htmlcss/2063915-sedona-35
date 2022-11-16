@@ -45,6 +45,7 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
+
 }
 
 .input[type=checkbox],
@@ -73,6 +74,13 @@ body {
     overflow: hidden;
 }
 
+.page-conteiner{
+    margin: 0 auto;
+    width: 1200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+}
+
 .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +90,7 @@ body {
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -147,9 +156,11 @@ body {
 
 .link-buttom {
     display: inline-block;
-    margin-right: 70px;
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 14px;
 }
+
 
 
 .like {
@@ -176,8 +187,8 @@ body {
     background-color: #756157;
     padding: 8px 34px;
     border-radius: 4px;
-    width: 160px;
-    height: 36px;
+    min-width: 160px;
+    min-height: 36px;
 
 }
 
@@ -269,6 +280,11 @@ body {
 .reasons-description-not {
     margin-bottom: 0;
     margin-top: 30px;
+}
+
+.reasons-title-3{
+    margin-top: -23px;
+    margin-bottom: 15px;
 }
 
 
@@ -369,12 +385,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 384px;
+    min-width: 400px;
+    min-height: 384px;
 }
 
-.reasons-title-main {
-    margin-top: -10px;
+.reasons-title-1 {
+    margin-top: -23px;
+    margin-bottom: 15px;
+}
+
+.the-wand{
+    min-width: 60px;
+    height: 2px;
+    margin-bottom: 10px;
 }
 
 .view-cafe {
@@ -431,9 +454,22 @@ body {
 
 .subscription-button {
     background-color: #82B3D3;
+    color: #FFFFFF;
     border-style: none;
     border-radius: 0 4px 4px 0;
     display: inline-block;
+}
+
+.subscription-button:focus{
+    background: #68A2CA;
+}
+
+.subscription-button:hover{
+    background: #68A2CA;
+}
+
+.subscription-button:active{
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .subscription-send {
@@ -502,7 +538,7 @@ body {
 .catalog-filter {
     display: flex;
     flex-direction: row;
-    height: 160px;
+    min-height: 160px;
     width: 1060px;
     margin-bottom: 70px;
     margin-top: 40px;
@@ -529,11 +565,15 @@ body {
 
 .breadcrumbs {
     display: flex;
-    width: 114px;
+    flex-wrap: wrap;
     margin-left: 70px;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.breadcrumbs-link-2{
+    margin-right: 10px;
 }
 
 .breadcrumbs-item-home {
@@ -735,13 +775,16 @@ input[type="number" i] {
     width: 123px;
 }
 
-.range-input:focus {
-    outline: none;
-}
 
 .range-input:hover {
+    outline: none;
+    background: #E6E6E6;
+}
+
+.range-input:focus {
     outline: 3px solid #83B3D3;
 }
+
 
 .range-input:active {
     outline: 2px solid #000000;
@@ -859,6 +902,10 @@ input[type="number" i] {
     margin: 0;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
 .button-yes {
     margin-bottom: 32px;
 }
@@ -908,19 +955,16 @@ input[type="number" i] {
 }
 
 
-.icos-view:hover {
+.button-see:hover .icos-view:hover {
     border: 2px solid #68A2CA;
-    outline: none;
 }
 
-.icos-view:focus {
+.button-see:focus .icos-view {
     border: 2px solid #68A2CA;
-    outline: none;
 }
 
-.icos-view:active {
+.button-see:active .icos-view {
     border: 2px solid #68A2CA;
-    outline: none;
 }
 
 
@@ -1199,6 +1243,7 @@ input[type="number" i] {
 
 .footer-phone:focus {
     color: #756157;
+    outline: none;
 }
 
 .footer-phone:active {
@@ -1239,11 +1284,11 @@ input[type="number" i] {
     fill: #68A2CA;
 }
 
-.button:hover .icon {
+.button:focus .icon {
     fill: #68A2CA;
 }
 
-.button:hover .icon {
+.button:active .icon {
     fill: rgba(104, 162, 202, 0.3);
 
 }
@@ -1278,21 +1323,29 @@ input[type="number" i] {
     color: rgba(255, 255, 255, 0.3);
 }
 
+
 .htmlacademy {
     fill: #000000;
 }
 
-.htmlacademy:hover {
+.logotip:hover .htmlacademy{
     fill: #756157;
 }
 
-.htmlacademy:focus {
+
+.logotip:focus .htmlacademy {
     fill: #756157;
 }
 
-.htmlacademy:active {
+.logotip:focus{
+    outline: none;
+}
+
+.logotip:active .htmlacademy {
     fill: rgba(117, 97, 87, 0.3);
 }
+
+
 
 .footer-social {
     align-items: center;
@@ -1311,10 +1364,10 @@ input[type="number" i] {
     overflow: auto;
 }
 
-/*.modal-container-close {
+.modal-container-close {
     display: none;
 }
-*/
+
 .appointment-form {
     display: grid;
     grid-template-rows: 48px 48px 48px 60px;
@@ -1325,12 +1378,16 @@ input[type="number" i] {
 }
 
 .modal {
-    position: relative;
+    position: absolute;
     margin: auto;
-    margin-top: 400px;
     padding: 64px 70px;
     background-color: #ffffff;
     border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    left: 50%;
+    top: 16%;
+    transform: translate(-50%, -16%);
+
 }
 
 
@@ -1410,6 +1467,7 @@ input[type="number" i] {
 .search-form-button:focus {
     border: none;
     outline: none;
+    background-color: #68A2CA;
 }
 
 
