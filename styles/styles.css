@@ -1373,15 +1373,15 @@ input[type=number] {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.brown-buttom:hover {
+.brown-button:hover {
     background: #615048;
 }
 
-.brown-buttom:focus {
+.brown-button:focus {
     background: #615048;
 }
 
-.brown-buttom:active {
+.brown-button:active {
     background: #756157;
     color: rgba(255, 255, 255, 0.3);
 }
