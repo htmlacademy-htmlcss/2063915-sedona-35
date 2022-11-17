@@ -74,7 +74,7 @@ body {
     overflow: hidden;
 }
 
-.page-conteiner{
+.page-container-1 {
     margin: 0 auto;
     width: 1200px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
@@ -86,6 +86,7 @@ body {
     flex-wrap: wrap;
     width: 1200px;
     margin: 0 auto;
+    min-height: 64px;
 }
 
 .navigation-list {
@@ -94,12 +95,13 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 339px;
-    height: 64px;
+    min-width: 268px;
 }
 
-.first-list {
-    margin-right: 285px;
+
+.navigation-user {
+    margin-right: 70px;
+    margin-left: auto;
 }
 
 .navigation-link {
@@ -114,7 +116,20 @@ body {
 }
 
 .about {
-    padding: 20px 16px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 18px;
+}
+
+.about:hover {
+    color: #756157;
+    outline: none;
+}
+
+.about:focus {
+    color: #756157;
+    outline: none;
 }
 
 .main-border::before,
@@ -126,7 +141,7 @@ body {
     height: 2px;
     background-color: #756257;
     content: "";
-    top: 63px;
+    top: 62px;
     width: calc(100%-32px);
 
 }
@@ -135,12 +150,16 @@ body {
 .search-hos,
 .favourites {
     margin: 0;
-    padding: 22px 12px;
+    padding: 20px 12px;
     margin-left: 2px;
 }
 
 .favourites {
     position: relative;
+}
+
+.navigation-link:focus {
+    outline: none;
 }
 
 .search-hos {
@@ -149,18 +168,18 @@ body {
     background-position: center;
 }
 
+
 .navigation-user .navigation-link {
     min-width: 18px;
     min-height: 22px;
 }
 
-.link-buttom {
+.link-button {
     display: inline-block;
     padding-left: 20px;
     padding-top: 10px;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
 }
-
 
 
 .like {
@@ -177,7 +196,8 @@ body {
 
 }
 
-.navigation-link-buttom {
+
+.navigation-link-button {
     font-style: normal;
     font-weight: 700;
     color: #FFFFFF;
@@ -192,6 +212,7 @@ body {
 
 }
 
+
 .navigation-link-current {
     display: flex;
     z-index: 1;
@@ -202,11 +223,19 @@ body {
     margin-right: 28px;
 }
 
+.navigation-link-current:hover {
+    outline: none;
+}
+
+.navigation-link-current:focus {
+    outline: none;
+}
+
 .about-1 {
     position: relative;
 }
 
-.main-conteiner {
+.main-container {
     flex-grow: 1;
     margin-top: 0;
     width: 1200px;
@@ -228,7 +257,7 @@ body {
 }
 
 
-.main-discription {
+.main-description {
     background-color: #FFFFFF;
 }
 
@@ -282,7 +311,7 @@ body {
     margin-top: 30px;
 }
 
-.reasons-title-3{
+.reasons-title-3 {
     margin-top: -23px;
     margin-bottom: 15px;
 }
@@ -309,8 +338,6 @@ body {
 .subscription-2 {
     background-color: #FFFFFF;
     color: #000000;
-    padding-bottom: 104px;
-    margin-top: 27px;
 
 }
 
@@ -394,7 +421,7 @@ body {
     margin-bottom: 15px;
 }
 
-.the-wand{
+.the-wand {
     min-width: 60px;
     height: 2px;
     margin-bottom: 10px;
@@ -458,17 +485,23 @@ body {
     border-style: none;
     border-radius: 0 4px 4px 0;
     display: inline-block;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
 }
 
-.subscription-button:focus{
+.subscription-button:focus {
     background: #68A2CA;
 }
 
-.subscription-button:hover{
+.subscription-button:hover {
     background: #68A2CA;
 }
 
-.subscription-button:active{
+.subscription-button:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -488,11 +521,18 @@ body {
 }
 
 .subscription-email-w {
-    width: 452px;
+    width: 412px;
     padding: 12px 20px;
     border: 0;
     border-radius: 4px 0 0 4px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #756157;
 }
+
 
 .field-ct {
     background: #F2F2F2;
@@ -507,12 +547,6 @@ body {
     width: 1200px;
 }
 
-.selection-panel {
-    color: #FFFFFF;
-    background-image: url("../images/catalog/galery-filter.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
 
 .inner-header-title {
     font-weight: 700;
@@ -521,7 +555,7 @@ body {
     margin: 0;
     padding-top: 35px;
     margin-left: 70px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .inner-header {
@@ -540,9 +574,19 @@ body {
     flex-direction: row;
     min-height: 160px;
     width: 1060px;
-    margin-bottom: 70px;
-    margin-top: 40px;
+    padding-top: 40px;
 }
+
+
+.select-container {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    background-image: url("../images/catalog/galery-filter.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
 
 .catalog-filter-title {
     font-weight: 700;
@@ -561,10 +605,12 @@ body {
 .catalog-right-column {
     width: 1060px;
     padding: 50px 70px 60px;
+    background-color: #FFFFFF;
 }
 
 .breadcrumbs {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     margin-left: 70px;
     padding: 0;
@@ -572,15 +618,26 @@ body {
     margin-bottom: 0;
 }
 
-.breadcrumbs-link-2{
+.breadcrumbs-link-2 {
     margin-right: 10px;
-}
-
-.breadcrumbs-item-home {
-    margin-right: 10px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .breadcrumbs-item-arrow {
+    margin-right: 10px;
+    background-image: url(../images/catalog/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 11px;
+}
+
+
+.breadcrumbs-item-home {
     margin-right: 10px;
 }
 
@@ -602,29 +659,33 @@ body {
     line-height: 23px;
 }
 
-.select-control-conteiner {
+.select-control-container {
     display: flex;
     width: 1060px;
-    align-items: center;
     margin-right: 70px;
     margin-bottom: 40px;
     height: 48px;
 }
 
 .select-control {
-    border: 2px solid #E5E5E5;
+    border: 3px solid #E5E5E5;
     border-radius: 4px;
     width: 292px;
-    height: 49px;
+    min-height: 47px;
     background-image: url("../images/catalog/select-arrow.svg");
     background-repeat: no-repeat;
     background-position: right 16px center;
     appearance: none;
-    padding: 14px 20px;
+    padding: 12px 20px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .select-control:hover {
-    border: 2px solid #68A2CA;
+    border: 3px solid #68A2CA;
     outline: none;
 }
 
@@ -648,7 +709,6 @@ body {
 
 }
 
-
 .catalog-filter-list {
     padding-left: 0;
     display: flex;
@@ -666,6 +726,7 @@ body {
 
 .hotels-found {
     color: #000000;
+    align-self: center;
     margin: 0;
     margin-right: 200px;
     font-family: "PT Sans", sans-serif;
@@ -727,7 +788,7 @@ body {
 
 }
 
-input[type="number" i] {
+input[type="number"] {
     padding-top: 12px;
     padding-left: 20px;
     padding-bottom: 12px;
@@ -878,7 +939,7 @@ input[type="number" i] {
 }
 
 .catalog-filter {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 .button-yes,
@@ -904,7 +965,7 @@ input[type="number" i] {
 
 input[type=number] {
     -moz-appearance: textfield;
-  }
+}
 
 .button-yes {
     margin-bottom: 32px;
@@ -940,8 +1001,8 @@ input[type=number] {
 }
 
 .icos-view {
-    border: 2px solid #E5E5E5;
-    padding: 17px 16px;
+    border: 3px solid #E5E5E5;
+    padding: 15px 14px;
     border-radius: 4px;
 }
 
@@ -956,23 +1017,23 @@ input[type=number] {
 
 
 .button-see:hover .icos-view:hover {
-    border: 2px solid #68A2CA;
+    border: 3px solid #68A2CA;
 }
 
 .button-see:focus .icos-view {
-    border: 2px solid #68A2CA;
+    border: 3px solid #68A2CA;
 }
 
 .button-see:active .icos-view {
-    border: 2px solid #68A2CA;
+    border: 3px solid #000000;
 }
 
 
-.brown-buttom:hover {
+.brown-button:hover {
     outline: none;
 }
 
-.brown-buttom:focus {
+.brown-button:focus {
     outline: none;
 }
 
@@ -1044,7 +1105,7 @@ input[type=number] {
     text-align: right;
 }
 
-.product-card-buttom-buttom,
+.product-card-button-button,
 .button-like {
     font-weight: 700;
     font-style: normal;
@@ -1064,7 +1125,7 @@ input[type=number] {
     grid-template-columns: repeat(3, 340px);
     gap: 20px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     padding: 0;
 
 }
@@ -1139,7 +1200,7 @@ input[type=number] {
     justify-self: end;
 }
 
-.product-card-buttom-buttom {
+.product-card-button-button {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
     padding: 8px 26px;
@@ -1162,7 +1223,7 @@ input[type=number] {
 
 .border-catalog {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .pagination {
@@ -1208,7 +1269,7 @@ input[type=number] {
     color: #000000;
 }
 
-.page-footer-conteiner {
+.page-footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1219,6 +1280,10 @@ input[type=number] {
     padding-bottom: 30px;
     padding-left: 70px;
     padding-right: 70px;
+}
+
+.page-footer-container-1 {
+    padding-top: 45px;
 }
 
 .footer-social-item {
@@ -1251,8 +1316,8 @@ input[type=number] {
 }
 
 .number {
-    width: 720px;
     text-align: center;
+    margin-right: 5px;
 }
 
 .last-logo {
@@ -1262,12 +1327,10 @@ input[type=number] {
 .footer-social-list {
     display: flex;
     align-items: center;
-    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 142px;
     padding-top: 10px;
     padding-left: 12px;
 }
@@ -1328,7 +1391,7 @@ input[type=number] {
     fill: #000000;
 }
 
-.logotip:hover .htmlacademy{
+.logotip:hover .htmlacademy {
     fill: #756157;
 }
 
@@ -1337,14 +1400,13 @@ input[type=number] {
     fill: #756157;
 }
 
-.logotip:focus{
+.logotip:focus {
     outline: none;
 }
 
 .logotip:active .htmlacademy {
     fill: rgba(117, 97, 87, 0.3);
 }
-
 
 
 .footer-social {
@@ -1751,7 +1813,6 @@ input[type=number] {
 
 }
 
-
 .amount-form-feild {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -1768,7 +1829,6 @@ input[type=number] {
 .data-feild:invalid + .confirm-massage {
     color: #FF5757;
 }
-
 
 .buttom-search {
     font-family: "PT Sans", sans-serif;
@@ -1794,9 +1854,17 @@ input[type=number] {
     margin-top: 17px;
 }
 
-.subscription-2 {
+.subscription-text-2 {
+    padding-top: 27px;
     padding-bottom: 110px;
 }
+
+.subscription-button {
+    height: 52px;
+    width: 232px;
+    padding: 0;
+}
+
 
 .data-feild {
     font-family: "PT Sans", sans-serif;
@@ -1804,4 +1872,8 @@ input[type=number] {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+}
+
+.lets-subscription-1 {
+    margin-bottom: 20px;
 }
