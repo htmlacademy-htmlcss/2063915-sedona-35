@@ -1449,10 +1449,10 @@ input[type=number] {
     overflow: auto;
 }
 
-/*.modal-container-close {
+.modal-container-close {
     display: none;
 }
-*/
+
 .appointment-form {
     display: grid;
     grid-template-rows: 48px 48px 48px 60px;
