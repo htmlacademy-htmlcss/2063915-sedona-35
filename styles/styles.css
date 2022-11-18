@@ -235,6 +235,10 @@ body {
     position: relative;
 }
 
+.first-list {
+    width: 405px;
+}
+
 .main-container {
     flex-grow: 1;
     margin-top: 0;
@@ -555,7 +559,7 @@ body {
     margin: 0;
     padding-top: 35px;
     margin-left: 70px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .inner-header {
@@ -580,9 +584,8 @@ body {
 
 .select-container {
     color: #FFFFFF;
-    background-color: #83B3D3;
     background-image: url("../images/catalog/galery-filter.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -604,13 +607,12 @@ body {
 
 .catalog-right-column {
     width: 1060px;
-    padding: 50px 70px 60px;
+    padding: 48px 70px 60px;
     background-color: #FFFFFF;
 }
 
 .breadcrumbs {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     margin-left: 70px;
     padding: 0;
@@ -619,14 +621,16 @@ body {
 }
 
 .breadcrumbs-link-2 {
+    margin-left: 14px;
     margin-right: 10px;
-    font-family: 'PT Sans'/ sans-serif;
+    font-family: 'PT Sans' / sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
 }
 
+/*
 .breadcrumbs-item-arrow {
     margin-right: 10px;
     background-image: url(../images/catalog/arrow.svg);
@@ -635,10 +639,23 @@ body {
     width: 8px;
     height: 11px;
 }
-
-
+*/
 .breadcrumbs-item-home {
-    margin-right: 10px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.breadcrumbs-item-home::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(../images/catalog/arrow.svg);
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 10px;
+    right: -18px;
+    top: 6px;
+
 }
 
 .breadcrumbs-link-2:hover {
@@ -668,7 +685,7 @@ body {
 }
 
 .select-control {
-    border: 3px solid #E5E5E5;
+    border: 2px solid #E5E5E5;
     border-radius: 4px;
     width: 292px;
     min-height: 47px;
@@ -677,7 +694,7 @@ body {
     background-position: right 16px center;
     appearance: none;
     padding: 12px 20px;
-    font-family: 'PT Sans',sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -685,7 +702,7 @@ body {
 }
 
 .select-control:hover {
-    border: 3px solid #68A2CA;
+    border: 2px solid #68A2CA;
     outline: none;
 }
 
@@ -788,7 +805,7 @@ body {
 
 }
 
-input[type="number"] {
+.range-input[type="number"] {
     padding-top: 12px;
     padding-left: 20px;
     padding-bottom: 12px;
@@ -834,6 +851,7 @@ input[type="number"] {
     font-size: 18px;
     line-height: 24px;
     width: 123px;
+    background: #F2F2F2;
 }
 
 
@@ -988,6 +1006,10 @@ input[type=number] {
     outline: 3px solid #83B3D3;
 }
 
+.button-view {
+    align-self: center;
+}
+
 .button-see {
     margin-right: 8px;
     width: 48px;
@@ -1001,11 +1023,10 @@ input[type=number] {
 }
 
 .icos-view {
-    border: 3px solid #E5E5E5;
+    border: 2px solid #E5E5E5;
     padding: 15px 14px;
     border-radius: 4px;
 }
-
 
 .button-see:hover {
     outline: #68A2CA;
@@ -1015,19 +1036,21 @@ input[type=number] {
     outline: #000000;
 }
 
-
 .button-see:hover .icos-view:hover {
-    border: 3px solid #68A2CA;
+    border: 2px solid #68A2CA;
 }
 
 .button-see:focus .icos-view {
-    border: 3px solid #68A2CA;
+    border: 2px solid #68A2CA;
 }
 
 .button-see:active .icos-view {
-    border: 3px solid #000000;
+    border: 2px solid #000000;
 }
 
+.something-active .icos-view {
+    border: 2px solid #000000;
+}
 
 .brown-button:hover {
     outline: none;
@@ -1317,7 +1340,7 @@ input[type=number] {
 
 .number {
     text-align: center;
-    margin-right: 5px;
+    margin-right: 55px;
 }
 
 .last-logo {
@@ -1426,10 +1449,10 @@ input[type=number] {
     overflow: auto;
 }
 
-.modal-container-close {
+/*.modal-container-close {
     display: none;
 }
-
+*/
 .appointment-form {
     display: grid;
     grid-template-rows: 48px 48px 48px 60px;
@@ -1876,4 +1899,8 @@ input[type=number] {
 
 .lets-subscription-1 {
     margin-bottom: 20px;
+}
+
+.contats-me {
+    width: 200px;
 }
